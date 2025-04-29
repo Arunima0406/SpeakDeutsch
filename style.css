@@ -1,20 +1,21 @@
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #D3D1CE, #B3B7BA);
-  color: #090F15;
+  background-color: #EEEBDD; /* Coconut Flour */
+  color: #2C2C2C; /* Slate */
 }
 
 header {
-  background: linear-gradient(to right, #6C6D74, #262E36);
-  color: white;
+  background-color: #5A5331; /* Olive Branch */
+  color: #EEEBDD;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
@@ -23,7 +24,7 @@ header {
 }
 
 .logo {
-  height: 60px;
+  height: 48px;
   margin-right: 1rem;
 }
 
@@ -36,27 +37,26 @@ header {
 }
 
 .navbar li a {
-  color: white;
+  color: #EEEBDD;
   text-decoration: none;
-  padding: 0.7rem 1.2rem;
-  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
   transition: background 0.3s ease;
+  border-radius: 4px;
 }
 
 .navbar li a.active,
 .navbar li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
+  background-color: #9E613D; /* Cinnamon Stick */
 }
 
 main {
   padding: 2rem;
-  max-width: 960px;
+  max-width: 900px;
   margin: auto;
-  background-color: #B3B7BA;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  color: #090F15;
+  background-color: #FFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
 }
 
 section {
@@ -64,12 +64,12 @@ section {
 }
 
 footer {
-  background: linear-gradient(to right, #6C6D74, #262E36);
-  color: white;
+  background-color: #5A5331;
+  color: #EEEBDD;
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  font-weight: bold;
+  padding: 1.2rem;
+  font-weight: 500;
+  margin-top: 3rem;
 }
 
 form {
@@ -77,86 +77,87 @@ form {
   flex-direction: column;
   gap: 1rem;
   max-width: 600px;
+  margin: auto;
 }
 
 form input,
 form textarea,
-form select,
-form button {
-  padding: 0.8rem;
+form select {
+  padding: 0.75rem;
   font-size: 1rem;
-  border: 1px solid #6C6D74;
-  border-radius: 6px;
-  background-color: #D3D1CE;
-  color: #090F15;
+  border: 1px solid #C8B79D;
+  border-radius: 4px;
+  background-color: #EEEBDD;
+  color: #2C2C2C;
 }
 
 form button {
-  background-color: #262E36;
+  padding: 0.75rem;
+  background-color: #9E613D; /* Cinnamon Stick */
   color: white;
   border: none;
-  font-weight: bold;
+  font-weight: 600;
+  border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 form button:hover {
-  background-color: #090F15;
+  background-color: #5A5331; /* Olive Branch */
 }
 
 .testimonials {
-  background: linear-gradient(to right, #D3D1CE, #B3B7BA);
-  padding: 60px 20px;
+  background-color: #C8B79D; /* Burlap */
+  padding: 4rem 1rem;
   text-align: center;
 }
 
 .testimonials h2 {
-  color: #090F15;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  color: #2C2C2C;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .testimonial-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 2rem;
 }
 
 .testimonial {
-  background-color: #FFFFFF;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  max-width: 350px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  max-width: 320px;
   transition: transform 0.3s ease-in-out;
 }
 
 .testimonial:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .testimonial img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .testimonial blockquote {
   font-style: italic;
-  color: #6C6D74;
-  margin-bottom: 20px;
+  color: #5A5331;
+  margin-bottom: 1rem;
 }
 
 .student-name {
-  font-weight: bold;
-  color: #262E36;
+  font-weight: 600;
+  color: #2C2C2C;
 }
 
 .contact-details p {
-  margin: 0.5rem 0;
-  font-weight: bold;
+  margin: 0.3rem 0;
+  font-weight: 500;
 }
-
