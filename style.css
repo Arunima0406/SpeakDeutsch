@@ -2,12 +2,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #fefcea, #f1da36);
-  color: #333;
+  background: linear-gradient(to right, #D3D1CE, #B3B7BA);
+  color: #090F15;
 }
 
 header {
-  background: linear-gradient(to right, #ff4e50, #f9d423);
+  background: linear-gradient(to right, #6C6D74, #262E36);
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -43,7 +43,8 @@ header {
   transition: background 0.3s ease;
 }
 
-.navbar li a.active, .navbar li a:hover {
+.navbar li a.active,
+.navbar li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
 }
@@ -52,9 +53,10 @@ main {
   padding: 2rem;
   max-width: 960px;
   margin: auto;
-  background-color: #fff8e1;
+  background-color: #B3B7BA;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  color: #090F15;
 }
 
 section {
@@ -62,7 +64,7 @@ section {
 }
 
 footer {
-  background: linear-gradient(to right, #ff4e50, #f9d423);
+  background: linear-gradient(to right, #6C6D74, #262E36);
   color: white;
   text-align: center;
   padding: 1.5rem;
@@ -77,15 +79,20 @@ form {
   max-width: 600px;
 }
 
-form input, form textarea, form select, form button {
+form input,
+form textarea,
+form select,
+form button {
   padding: 0.8rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #6C6D74;
   border-radius: 6px;
+  background-color: #D3D1CE;
+  color: #090F15;
 }
 
 form button {
-  background-color: #ff7043;
+  background-color: #262E36;
   color: white;
   border: none;
   font-weight: bold;
@@ -94,17 +101,17 @@ form button {
 }
 
 form button:hover {
-  background-color: #e64a19;
+  background-color: #090F15;
 }
 
 .testimonials {
-  background: linear-gradient(to right, #ffe5b4, #ffd1dc);
+  background: linear-gradient(to right, #D3D1CE, #B3B7BA);
   padding: 60px 20px;
   text-align: center;
 }
 
 .testimonials h2 {
-  color: #333;
+  color: #090F15;
   font-size: 2.5rem;
   margin-bottom: 40px;
 }
@@ -117,7 +124,7 @@ form button:hover {
 }
 
 .testimonial {
-  background-color: #fff;
+  background-color: #FFFFFF;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -139,17 +146,17 @@ form button:hover {
 
 .testimonial blockquote {
   font-style: italic;
-  color: #555;
+  color: #6C6D74;
   margin-bottom: 20px;
 }
 
 .student-name {
   font-weight: bold;
-  color: #e91e63;
+  color: #262E36;
 }
-
 
 .contact-details p {
   margin: 0.5rem 0;
   font-weight: bold;
 }
+
