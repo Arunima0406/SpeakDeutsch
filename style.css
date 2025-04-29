@@ -1,15 +1,14 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
   color: #333;
-  line-height: 1.6;
 }
 
 header {
-  background-color: #004466;
+  background: #002f4b;
   color: white;
-  padding: 1.5rem;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -19,58 +18,41 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
+  color: white;
   font-weight: bold;
 }
 
-section {
+main {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
-ul {
-  padding-left: 1.5rem;
-}
-
-button {
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #005fa3;
-}
-
-footer {
-  background-color: #004466;
-  color: white;
+.hero {
   text-align: center;
-  padding: 1rem;
   margin-top: 2rem;
 }
 
-.tutor-photo {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  margin: 1rem 0;
-  display: block;
+.hero .btn {
+  padding: 0.7rem 1.5rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-#tutor {
-  text-align: center;
+ul {
+  padding-left: 1.2rem;
 }
 
 form {
@@ -79,10 +61,36 @@ form {
   gap: 1rem;
 }
 
-input[type="text"],
-input[type="email"] {
-  padding: 0.5rem;
+input, button {
+  padding: 0.8rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
   border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #002f4b;
+  color: white;
+  margin-top: 2rem;
+}
+
+.tutor-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
