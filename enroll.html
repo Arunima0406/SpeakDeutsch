@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Enroll - German Language</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    // Function to show popup on form submission
+    function showPopup(event) {
+      event.preventDefault(); // Prevent form from submitting immediately
+      alert("Thank you for enrolling! You are now enrolled in the German Language course.");
+      // You can optionally redirect or reset the form here if needed
+      document.getElementById('enrollForm').reset(); // Reset form
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -21,7 +30,7 @@
   <main>
     <section>
       <h2>Sign Up for Our German Language Course</h2>
-      <form action="thankyou.html" method="POST">
+      <form id="enrollForm" onsubmit="showPopup(event)">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Why do you want to learn German?" rows="5" required></textarea>
