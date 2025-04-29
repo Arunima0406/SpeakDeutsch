@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enroll - German Language</title>
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    // Function to show popup on form submission
-    function showPopup(event) {
-      event.preventDefault(); // Prevent form from submitting immediately
-      alert("Thank you for enrolling! You are now enrolled in the German Language course.");
-      // You can optionally redirect or reset the form here if needed
-      document.getElementById('enrollForm').reset(); // Reset form
-    }
-  </script>
+  <meta charset="UTF-8">
+  <title>Enroll - German Language Classes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Enroll Now</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="enroll.html">Enroll</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <div class="logo-container">
+    <img src="images/logo.png" alt="German Logo" class="logo">
+    <h1>German Language Classes - Ramnagar</h1>
+  </div>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="enroll.html" class="active">Enroll</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <section>
-      <h2>Sign Up for Our German Language Course</h2>
-      <form id="enrollForm" onsubmit="showPopup(event)">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Why do you want to learn German?" rows="5" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
+<main>
+  <h2>Enroll Now</h2>
+  <p>Start your journey with German today! Fill out the form below to register for a class.</p>
+  <form id="enroll-form">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <select name="level" required>
+      <option value="">Select Level</option>
+      <option value="A1">A1</option>
+      <option value="A2">A2</option>
+      <option value="B1">B1</option>
+      <option value="B2">B2</option>
+      <option value="C1">C1</option>
+    </select>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <textarea name="message" placeholder="Any Message..." rows="4"></textarea>
+    <button type="submit">Enroll</button>
+  </form>
+</main>
 
-  <footer>
-    <p>&copy; 2025 German Language Promotion Ramnagar</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 German Language Classes, Ramnagar</p>
+</footer>
 </body>
 </html>
